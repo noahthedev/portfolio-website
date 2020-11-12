@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Helvetica, arial, sans-serif;
+  background-image: url("https://www.designbolts.com/wp-content/uploads/2012/12/Triangle-White-Seamless-Patterns.jpg");
+}
+
+header {
+  background-color: gray;
+}
+
+header h1 {
+  font-family: "Space Grotesk", monospace;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 15px 0 15px 20px;
+    padding-top: 0;
+    font-size: 45px;
+  }
+
+  header nav {
+    margin-top: 15px;
+  }
+}
+
+main {
+  padding: 20px 20px;
+}
+
+main p {
+  font-size: 18px;
+}
+
+main img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 20px
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+
+  .item {
+    padding: 20px;
+  }
+}
+
+img.resize {
+  width: 50%
+}
+
+form label {
+  display: block;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+}
+
+form textarea {
+  display: block;
+}
+
+footer {
+  background-color: gray;
+
+}
+
+footer p {
+  text-align: center;
+  margin:0;
+  padding-top: 20px;
+}
