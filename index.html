@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gina</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <p>foo bar</p>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Noah Roberts | Software Developer</title>
+    <!-- Link to Normalize CSS to ensure browser uniformity -->
+    <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    rel="stylesheet"
+    type="text/css"/>
+    <!-- Link to my funky Google header font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <!-- Link to my external CSS stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Noah Roberts</h1>
+      <nav>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+				  <li><a href="#about">About</a></li>
+				  <li><a href="#projects">Projects</a></li>
+				  <li><a href="#contact">Contact</a></li>
+			  </ul>
+      </nav>  
+    </header>
+    <main>
+      <!-- Intro -->
+      <a name="home"></a>
+      <section>
+        <div class="group">
+          <div class="item">
+            <img src="images/Noah_sq.jpeg" alt="Man in a black suit with a spiffy bolo tie">
+          </div>
+          <div class="item">  
+            <h2>Welcome!</h2>
+            <p>I'm Noah Roberts, a software developer living in the Logan Square neighborhood of Chicago, IL.</p>
+            <p>As a former beverage director, I've developed a skillset focused around creative problem solving, thrifty resource management, and facilitating an environment of hospitality for my clients and coworkers alike.</p>
+
+          </div>
+        </div>
+      </section>      
+      <hr>
+      <!-- About Me -->
+      <a name="about"></a>
+      <section>
+        <div class="group">
+          <div class="item">
+            <h2>A Bit About Me</h2>
+            <p>My desire to work with emerging technology has brought me to <a href="https://www.bloc.io" target="_blank">Bloc</a> where I'm currently a student in their web development program. Upon graduation, I intend to work in full stack web development and, as I expand my knowledge base and experience, transition to work in UI/UX design. I look forward to a career where I can be a lifelong student and coloborate with similarly passionate individuals and teams.</p>
+            <p>When I'm not behind a keyboard or a cocktail shaker, you might find me training for my next marathon on Chicago's <a href="https://www.the606.org" target="_blank">606 trail</a> or in my kitchen attempting to bake off the picture-perfect sourdough boule.</p>
+          </div>
+          <div class="item">  
+            <img src="images/marathon.jpeg" alt="Two brothers in Grant Park after completing Chicago marathon">
+          </div>
+        </div>    
+      </section>
+      <hr>
+      <!-- Projects -->
+      <a name="projects"></a>
+      <section>
+        <div class="group">
+          <div class="item">
+            <h2>Projects</h2>
+            <img src="images/comingsoon.jpg" alt="coming soon in neon sign lettering" class="resize">
+            <p><strong>Feedback Form</strong></p>
+            <p>I built a web form for a local distillery to gather feedback from their customers on a line of experimental spirits. The form is built in HTML, styled with CSS, and utilizes the Formspree API to email submissions to the owner.</p>
+            <ul>
+              <li><a href="#">GitHub repository</a></li>
+              <li><a href="#">Feedback Form</a></li>
+            </ul>  
+
+          </div>
+        </div>      
+      <hr>
+      <!-- Contact Me -->
+      <a name="contact"></a>
+      <section>
+        <div class="group">
+          <div class="item">
+            <h2>Get In Touch</h2>
+              <p>But enough about me! I want to hear about you and the projects you're working on. Please feel free to reach out!</p>
+              <form action="https://formspree.io/f/mzbkvded" method="POST">
+              <label for="user-name">Name:</label>
+              <input id="user-name" type="text" name="name">
+
+              <label for="user-email">Email:</label>
+              <input id="user-email" type="text" name="email">
+
+              <label for="user-message">Message:</label>
+              <textarea id="user-message" name="message"></textarea>
+
+              <button type="submit">Submit</button>
+              </form>  
+              <ul>
+                <li>
+                <a href="https://www.linkedin.com/in/noahmichaelroberts/" target="_blank">LinkedIn</a></li>
+                <li>
+                <a href="https://github.com/noahthedev" target="_blank">GitHub</a>
+                <li>
+                <a href="mailto:hello@yoursite.com">Email Me</a></li>
+              </ul>
+            </div>
+            <div class="item">  
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23748.82313538432!2d-87.72689740291592!3d41.92289470116629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcd657cef0eb1%3A0x869220375a9604d3!2sLogan%20Square%2C%20Chicago%2C%20IL!5e0!3m2!1sen!2sus!4v1605147885685!5m2!1sen!2sus" width="100%" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>  
+      </section>  
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>Copyright © 2020 Noah Roberts<p>
+    </footer>
+  </body>
 </html>
